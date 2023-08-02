@@ -3,9 +3,23 @@ $host = "localhost";
 $data = "mysite";
 $user = "root";
 $pass = "";
-
+header("Access-Control-Allow-Origin:*");
 require_once "config.php";
-$connection = new mysqli($host,$user,$pass,$data);
-if($connection -> connect_error)die("Error connection");
+$connect = mysqli_connect($host, $user, $pass, $data);
+if (!$connect) {
+    echo "Error connect";
+}
+$query = "SELECT * FROM header";
+$result = mysqli_query($connect, $query);
 
-$query = "SELECT * FROM ";
+if (!$result) {
+    die("Error in query: " . mysqli_error($connect));
+}
+
+$data = array();
+while ($row = mysqli_fetch_assoc($result)) {
+    $data[] = $row;
+}
+
+
+echo json_encode($data);
