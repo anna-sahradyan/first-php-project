@@ -2,7 +2,7 @@
 use App\Services\Router;
 
 Router::page('/login','login');
-Router::page('/request','request');
+Router::page('/register','register');
 ?>
 <pre>
     <?php

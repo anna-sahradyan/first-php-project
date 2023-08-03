@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Services;
 class Router
 {
@@ -12,8 +13,15 @@ class Router
 
         ];
     }
-    public static function enable(){
-       var_dump(self::$list);
+
+    public static function enable()
+    {
+        $query = $_GET['q'];
+        foreach (self::$list as $route) {
+            if ($route["uri"] === "/" . $query) {
+                require_once "views/pages/" . $route['page'] . ".php";
+            }
+        }
     }
 }
 
