@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* 2 */
+}
+
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  position: relative;
+  /*background: #04394C;*/
+
+}
+
+.p {
+  padding: 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+}

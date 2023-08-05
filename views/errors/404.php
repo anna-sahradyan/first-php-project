@@ -7,6 +7,6 @@ require_once "views/components/Head.php"
 require_once "views/components/Navbar.php"
 ?>
 <body>
-<h1>register page</h1>
+<h1 class="text-lg-center">Page Not Found </h1>
 </body>
 </html>
