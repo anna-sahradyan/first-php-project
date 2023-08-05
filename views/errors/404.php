@@ -1,12 +1,18 @@
+
+<?php
+
+use App\Services\Page;
+
+?>
 <!doctype html>
 <html lang="en">
 <?php
-require_once "views/components/Head.php"
+Page::part("Head");
 ?>
 <?php
-require_once "views/components/Navbar.php"
+Page::part("Navbar");
 ?>
 <body>
-<h1 class="text-lg-center">Page Not Found </h1>
+<h1 class="text-lg-center font-bold">Page Not Found </h1>
 </body>
 </html>

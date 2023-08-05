@@ -1,11 +1,16 @@
+<?php
+
+use App\Services\Page;
+
+?>
 <!doctype html>
 <html lang="en">
 <?php
-require_once "views/components/Head.php"
+Page::part("Head");
 ?>
 <body>
 <?php
-require_once "views/components/Navbar.php"
+Page::part("Navbar");
 ?>
 <div class="w-full  h-full">
     <h1 class=" text-lg-center mt-5">Sign In</h1>
