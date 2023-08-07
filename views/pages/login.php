@@ -20,8 +20,8 @@ Page::part("Navbar");
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="m-4">
-            <label for="inputPassword6" class="col-form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="password" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="password">
         </div>
 
         <div class="m-4">

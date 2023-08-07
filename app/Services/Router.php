@@ -3,6 +3,10 @@ namespace App\Services;
 class Router
 {
     private static $list = [];
+    /*Method of route  for pages
+     *@param $uri
+     *@param $page_name
+     * */
 
     public static function page($uri, $page_name)
     {

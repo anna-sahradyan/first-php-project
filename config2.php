@@ -4,7 +4,7 @@ $data = "mysite";
 $user = "root";
 $pass = "";
 header("Access-Control-Allow-Origin:*");
-require_once "config.php";
+require_once "config2.php";
 $connect = mysqli_connect($host, $user, $pass, $data);
 if (!$connect) {
     echo "Error connect";
