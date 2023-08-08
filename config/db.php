@@ -1,11 +1,13 @@
 <?php
 return [
-    "enable"=>true,
-    "host" => "127.0.0.1",
-    "port" => 3306,
-    "username" => "root",
-    "password" => "",
-    "db" => "auth"
-];
+    "enable" => true,
+    $dbConnection = getenv('DB_CONNECTION'),
+    $dbHost = getenv('DB_HOST'),
+    $dbDatabase = getenv('DB_DATABASE'),
+    $dbUsername = getenv('DB_USERNAME'),
+    $dbPassword = getenv('DB_PASSWORD'),
+    $dbPort = getenv('DB_PORT'),
+]
 
 ?>
+
