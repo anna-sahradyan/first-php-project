@@ -8,10 +8,11 @@ require_once "views/components/Head.php"
 <?php
 require_once "views/components/Navbar.php"
 ?>
-<h1>Sign Up</h1>
-<div class="w-full  h-full">
+
+<div class="w-full  h-full  flex justify-center items-center ">
+    <div class="w-3/4">
     <h1 class=" text-lg-center mt-5">Sign Up</h1>
-    <form>
+    <form  action="/auth/register" method="post" enctype="multipart/form-data">
         <div class="m-4">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -41,6 +42,7 @@ require_once "views/components/Navbar.php"
         </div>
 
     </form>
+    </div>
 </div>
 </body>
 </html>

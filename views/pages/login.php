@@ -12,7 +12,8 @@ Page::part("Head");
 <?php
 Page::part("Navbar");
 ?>
-<div class="w-full  h-full">
+<div class="w-full  h-full flex justify-center items-center">
+    <div class="w-3/4">
     <h1 class=" text-lg-center mt-5">Sign In</h1>
     <form>
         <div class="m-4">
@@ -30,6 +31,6 @@ Page::part("Navbar");
 
     </form>
 </div>
-
+</div>
 </body>
 </html>
